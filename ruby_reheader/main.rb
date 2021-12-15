@@ -17,16 +17,13 @@ end
 iosDirPath = fetch_ios_example_path("ios_example/ios_example.xcodeproj")
 project = Xcodeproj::Project.open(iosDirPath)
 
-# project.targets.each do |target|
-#   # 只处理application? "com.apple.product-type.application"
-#   # p target.product_type
-#   p target.references_by_keys_attributes
-# end
+header_path_hash = Hash.new
 project.groups.each do |group|
-	puts "-----✨#{group.class}"
-  header_map = group.fetch_public_path_map_file
-
+	# puts "-----✨#{group.display_name}"
+  sub_header_map = group.fetch_public_path_map_file
+	header_path_hash.merge!(sub_header_map)
 end
+puts header_path_hash
 
 class Main
 end
