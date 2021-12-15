@@ -1,0 +1,6 @@
+framework module Pods_TwoTarget {
+  umbrella header "Pods-TwoTarget-umbrella.h"
+
+  export *
+  module * { export * }
+}
