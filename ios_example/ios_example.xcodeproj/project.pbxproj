@@ -14,6 +14,7 @@
 		1C28375D2764FDB7002D7274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C28375C2764FDB7002D7274 /* Assets.xcassets */; };
 		1C2837602764FDB7002D7274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C28375E2764FDB7002D7274 /* LaunchScreen.storyboard */; };
 		1C2837632764FDB7002D7274 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2837622764FDB7002D7274 /* main.m */; };
+		1C9651B4276F7D45002E9803 /* SubSubSubmaxClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9651B3276F7D45002E9803 /* SubSubSubmaxClass.m */; };
 		1CD7DAC02765A414005823B2 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD7DABF2765A414005823B2 /* TestClass.m */; };
 		1CD7DAC42765AD57005823B2 /* AA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD7DAC32765AD57005823B2 /* AA.m */; };
 		1CD7DAC82765AD62005823B2 /* CC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD7DAC72765AD62005823B2 /* CC.m */; };
@@ -53,6 +54,8 @@
 		1C28375F2764FDB7002D7274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C2837612764FDB7002D7274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C2837622764FDB7002D7274 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C9651B2276F7D45002E9803 /* SubSubSubmaxClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubSubSubmaxClass.h; sourceTree = "<group>"; };
+		1C9651B3276F7D45002E9803 /* SubSubSubmaxClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubSubSubmaxClass.m; sourceTree = "<group>"; };
 		1CD7DABE2765A414005823B2 /* TestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
 		1CD7DABF2765A414005823B2 /* TestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		1CD7DAC22765AD57005823B2 /* AA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AA.h; sourceTree = "<group>"; };
@@ -148,9 +151,27 @@
 			path = ios_example;
 			sourceTree = "<group>";
 		};
+		1C9651B0276F7D20002E9803 /* subGroup */ = {
+			isa = PBXGroup;
+			children = (
+				1C9651B1276F7D2A002E9803 /* subsubGroup */,
+			);
+			path = subGroup;
+			sourceTree = "<group>";
+		};
+		1C9651B1276F7D2A002E9803 /* subsubGroup */ = {
+			isa = PBXGroup;
+			children = (
+				1C9651B2276F7D45002E9803 /* SubSubSubmaxClass.h */,
+				1C9651B3276F7D45002E9803 /* SubSubSubmaxClass.m */,
+			);
+			path = subsubGroup;
+			sourceTree = "<group>";
+		};
 		1CD7DABD2765A408005823B2 /* wocao */ = {
 			isa = PBXGroup;
 			children = (
+				1C9651B0276F7D20002E9803 /* subGroup */,
 				1CD7DABE2765A414005823B2 /* TestClass.h */,
 				1CD7DABF2765A414005823B2 /* TestClass.m */,
 			);
@@ -368,6 +389,7 @@
 				1CD7DAC02765A414005823B2 /* TestClass.m in Sources */,
 				1C2837582764FDB5002D7274 /* ViewController.m in Sources */,
 				1C2837522764FDB5002D7274 /* AppDelegate.m in Sources */,
+				1C9651B4276F7D45002E9803 /* SubSubSubmaxClass.m in Sources */,
 				1CD7DAC42765AD57005823B2 /* AA.m in Sources */,
 				1CD7DB322765F1FE005823B2 /* Not_target_header.m in Sources */,
 				1C2837632764FDB7002D7274 /* main.m in Sources */,
@@ -562,7 +584,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/ios_example-eolefsddzaoxdzgwovgxyqlkukpb/HMap/ios_example.build/Debug-iphoneos/ios_example.build/ios_example-own-target-headers.hmap\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/ios_example-eolefsddzaoxdzgwovgxyqlkukpb/HMap/ios_example.build/Debug-iphoneos/ios_example.build/ios_example-project-headers.hmap\"",
+				);
 				INFOPLIST_FILE = ios_example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -590,7 +615,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/ios_example-eolefsddzaoxdzgwovgxyqlkukpb/HMap/ios_example.build/Debug-iphoneos/ios_example.build/ios_example-own-target-headers.hmap\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/ios_example-eolefsddzaoxdzgwovgxyqlkukpb/HMap/ios_example.build/Debug-iphoneos/ios_example.build/ios_example-project-headers.hmap\"",
+				);
 				INFOPLIST_FILE = ios_example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
