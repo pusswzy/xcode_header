@@ -17,6 +17,11 @@ end
 
 class Main
 
+	def self.inherited (subClass)
+
+	end
+
+
 	# iosDirPath = fetch_ios_example_path("ios_example/ios_example.xcodeproj")
 	iosDirPath = "/Users/wangze/Desktop/GoPlayForiOS/Pods/Pods.xcodeproj"
 	project = Xcodeproj::Project.open(iosDirPath)
