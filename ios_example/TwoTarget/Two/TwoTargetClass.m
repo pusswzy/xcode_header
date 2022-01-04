@@ -6,9 +6,11 @@
 //
 
 #import "TwoTargetClass.h"
-
+#import "TestTTT.h"
 @implementation TwoTargetClass
 + (void)log {
     NSLog(@"呵呵");
+    
+    [TestTTT ttt];
 }
 @end

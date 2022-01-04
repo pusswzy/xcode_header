@@ -30,6 +30,8 @@
 		1CD7DB322765F1FE005823B2 /* Not_target_header.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD7DB312765F1FE005823B2 /* Not_target_header.m */; };
 		1CD7DB362765F759005823B2 /* TwoTargetClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD7DAE82765E849005823B2 /* TwoTargetClass.m */; };
 		202CB986F29A1544C1F9405C /* Pods_TwoTarget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F062CEA7878B508D42BD164 /* Pods_TwoTarget.framework */; };
+		B8E5CB27277968C5005C6DCB /* TestTTT.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E5CB26277968C5005C6DCB /* TestTTT.m */; };
+		B8E5CB28277968E0005C6DCB /* TwoTargetClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD7DAE82765E849005823B2 /* TwoTargetClass.m */; };
 		BA32567C8CA893718DDFF66E /* Pods_ios_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4733FEB4309CFF4DD4A6AF45 /* Pods_ios_example.framework */; };
 		DD43EE37095D9A27A2FBC42F /* Pods_ios_example_ios_exampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916E34289ABB164D33C32F41 /* Pods_ios_example_ios_exampleUITests.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,8 @@
 		8F062CEA7878B508D42BD164 /* Pods_TwoTarget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoTarget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		916E34289ABB164D33C32F41 /* Pods_ios_example_ios_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_example_ios_exampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FB4AC55DEE86E3ADBE171F /* Pods-ios_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_example.release.xcconfig"; path = "Target Support Files/Pods-ios_example/Pods-ios_example.release.xcconfig"; sourceTree = "<group>"; };
+		B8E5CB25277968C5005C6DCB /* TestTTT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTTT.h; sourceTree = "<group>"; };
+		B8E5CB26277968C5005C6DCB /* TestTTT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTTT.m; sourceTree = "<group>"; };
 		EACE939F444F3255FB26B01F /* Pods-TwoTarget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoTarget.debug.xcconfig"; path = "Target Support Files/Pods-TwoTarget/Pods-TwoTarget.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,7 +139,6 @@
 				8DABF0073A94F3FBA439D306 /* Pods-ios_example-ios_exampleUITests.debug.xcconfig */,
 				0B2296DB0E861E7967955DBF /* Pods-ios_example-ios_exampleUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -254,6 +257,8 @@
 			children = (
 				1CD7DAE72765E849005823B2 /* TwoTargetClass.h */,
 				1CD7DAE82765E849005823B2 /* TwoTargetClass.m */,
+				B8E5CB25277968C5005C6DCB /* TestTTT.h */,
+				B8E5CB26277968C5005C6DCB /* TestTTT.m */,
 			);
 			path = Two;
 			sourceTree = "<group>";
@@ -536,6 +541,7 @@
 			files = (
 				1CD7DAC82765AD62005823B2 /* CC.m in Sources */,
 				1CD7DAC02765A414005823B2 /* TestClass.m in Sources */,
+				B8E5CB28277968E0005C6DCB /* TwoTargetClass.m in Sources */,
 				1C2837582764FDB5002D7274 /* ViewController.m in Sources */,
 				1C2837522764FDB5002D7274 /* AppDelegate.m in Sources */,
 				1C9651B4276F7D45002E9803 /* SubSubSubmaxClass.m in Sources */,
@@ -550,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E5CB27277968C5005C6DCB /* TestTTT.m in Sources */,
 				1CD7DAD72765E828005823B2 /* ViewController.m in Sources */,
 				1CD7DAD12765E828005823B2 /* AppDelegate.m in Sources */,
 				1CD7DB362765F759005823B2 /* TwoTargetClass.m in Sources */,

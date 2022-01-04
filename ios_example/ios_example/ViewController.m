@@ -9,9 +9,10 @@
 #warning 这个能找到可不是什么好表现啊
 //#import "AA.h"
 #import "OnlyHeader.h"
-#import <FakeParent/AA.h>
+//#import <FakeParent/AA.h>
 #import "wocao/TestClass.h"
 #import "wocao/subGroup/subsubGroup/SubSubSubmaxClass.h"
+#import "TwoTargetClass.h"
 
 /*
  OnlyHeader.h -> /Users/zhongyiwang/Desktop/xcode_header/ios_example/FakeParent/OnlyHeader.h
@@ -49,8 +50,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [AA log];
-//    [TwoTargetClass log];
+//    [AA log];
+    [TwoTargetClass log];
 }
 
 
